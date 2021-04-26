@@ -20,6 +20,12 @@
 
 # YOUR CODE HERE
 
+#fahr_to_celsius() is the function which change fahr to celsius
+def fahr_to_celsius(temp_fahrenheit):
+    #converted_temp is the changed variable(fahr to celsius)
+    converted_temp = ( temp_fahrenheit - 32 ) / 1.8
+    return converted_temp
+
 # ### Problem 1 tests
 # 
 # Check that the function produces correct answers for:
@@ -27,7 +33,11 @@
 # 2. What about 71° Fahrenheit in Celsius?
 
 # ### Check your code
-# 
+#Print the answer for 1.
+print('1. 48° Fahrenheit in Celsius is '+str(fahr_to_celsius(48)))
+#Print the answer of 2.
+print('2. 71° Fahrenheit in Celsius is '+str(fahr_to_celsius(71)))
+
 # - Make sure you used the given variable names
 # - Check that you have added necessary comments to your code
 # - Check that your function has a docstring that describes what it does
@@ -42,9 +52,14 @@
 # Write your answers below:
 
 # YOUR ANSWER HERE. Write your answers as comments
+
+#1. I creally understood the baisic ways to use function.
 #
-#
-#
+
+#2. There are three advantages of the function.
+#First of all, you can make program.
+#The second, being able to omit a calculation procedure for the same processing.
+#The third, promote efficiency of each other's work by sharing function all over the world. 
 #
 
 # #### Done!
