@@ -49,6 +49,7 @@ temp_data =  [19, 21, 21, 21, 23, 23, 23, 21, 19, 21, 19, 21, 23, 27, 27, 28, 30
               30, 30, 30, 30, 28, 28]
 
 
+
 # #### Part 2 (continues)
 # 
 # 2. Import the `fahr_to_celsius` and `temp_classifier` functions from your `temp_functions.py` 
@@ -65,6 +66,20 @@ temp_data =  [19, 21, 21, 21, 23, 23, 23, 21, 19, 21, 19, 21, 23, 27, 27, 28, 30
 
 
 # YOUR CODE HERE
+#Open the script file 'temp_functions.py'.
+from temp_functions import fahr_to_celsius,temp_classifier
+
+#List temp_classes is categories of temp_data.
+temp_classes=[]
+# n is the length of temp_data.
+n=len(temp_data)
+
+for tem in temp_data:
+  #temp_celsius is changed variable tem to celsius
+  temp_celsius = fahr_to_celsius(tem)
+  #temp_class is the category of temp_celsius
+  temp_class = temp_classifier(temp_celsius)
+  temp_classes.append(temp_class)
 
 # #### Part 2 (continues)
 # 
@@ -75,6 +90,21 @@ temp_data =  [19, 21, 21, 21, 23, 23, 23, 21, 19, 21, 19, 21, 23, 27, 27, 28, 30
 #   
 
 # YOUR CODE HERE
+# `zeros`, `ones`, `twos`, and `threes` are the number of '0,1,2,3' which included in list temp_class
+zeros=0 
+ones=0
+twos=0
+threes=0
+# I'll count the number of '0,1,2,3' in this for loop
+for value in temp_classes:
+  if(value==0):
+    zeros+=1
+  elif(value==1):
+    ones+=1
+  elif(value==2):
+    twos+=1
+  else:
+    threes+=1
 
 # **TIP**: You might want to consider using a [**count()** function](https://www.tutorialspoint.com/python3/list_count.htm) OR a for loop for this.
 
@@ -96,10 +126,8 @@ print(zeros,ones,twos,threes)
 # - If you have any comments and concerns at this point, you can write them below:
 
 # YOUR ANSWER HERE. Write your answer as comments (with #)
-#
-#
-#
-#
+# I have already written all comments.
+# I have no question about this problem so far.
 #
 # YOUR ANSWER ENDS HERE.
 

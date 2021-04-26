@@ -34,9 +34,9 @@ def fahr_to_celsius(temp_fahrenheit):
 
 # ### Check your code
 #Print the answer for 1.
-print('1. 48° Fahrenheit in Celsius is '+str(fahr_to_celsius(48)))
+print('1. 48° Fahrenheit in Celsius is '+str(round(fahr_to_celsius(48),2)))
 #Print the answer of 2.
-print('2. 71° Fahrenheit in Celsius is '+str(fahr_to_celsius(71)))
+print('2. 71° Fahrenheit in Celsius is '+str(round(fahr_to_celsius(71),2)))
 
 # - Make sure you used the given variable names
 # - Check that you have added necessary comments to your code
