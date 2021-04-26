@@ -26,15 +26,33 @@
 
 # YOUR CODE HERE to define temp_classifier
 
+#temp_classifier is the function that classified tempreature for 4 categories.
+def temp_classifier(temp_celsius):
+    #temp_celsius is the target of temperature    
+    if(temp_celsius<-2):
+      return 0
+    elif(temp_celsius<2):
+      return 1
+    elif(temp_celsius<15):
+      return 2
+    else:
+      return 3
+    
+
+
 # Use your newly created function to print the answers to the following questions:
 
 
 # 1. What is the class value for 16.5 degrees Celsius?
 # YOUR CODE HERE
-#
+
+#Print the class of 16.5.
+print('16.5⇒ class '+str(temp_classifier(16.5)))
 # 2. What is the class value for +2 degrees Celsius?
 # YOUR CODE HERE
-#
+
+#Print the class of +2.
+print('+2⇒ class '+str(temp_classifier(2)))
 
 
 # ### Problem 2 tests
@@ -67,9 +85,8 @@ print("ok :)")
 
 # YOUR ANSWER HERE. Write your answer as comments
 #
-#
-#
-#
+# I answered variable names and comments correctly. 
+#And I added the dosctring of function.
 #
 # YOUR ANSWER ENDS HERE
 
